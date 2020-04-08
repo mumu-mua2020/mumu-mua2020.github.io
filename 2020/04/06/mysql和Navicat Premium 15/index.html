@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Muse","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="** mysq l 和 Naviat Premium 15**我记得，我之前安装过一次，但是忘记，现在顺便记一下把，顺便把Navicat Premium 15这个的破解也一起记录了把。 首先就是安装我们的MySQL数据库，其实到官网还是很快就下载到了，因为，这个数据库是免费的哟。 附上官网的地址吧： 下载链接： http:&#x2F;&#x2F;dev.mysql.com&#x2F;get&#x2F;Downloads&#x2F;MySQLIns">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql和Navicat Premium 15">
+<meta property="og:url" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="** mysq l 和 Naviat Premium 15**我记得，我之前安装过一次，但是忘记，现在顺便记一下把，顺便把Navicat Premium 15这个的破解也一起记录了把。 首先就是安装我们的MySQL数据库，其实到官网还是很快就下载到了，因为，这个数据库是免费的哟。 附上官网的地址吧： 下载链接： http:&#x2F;&#x2F;dev.mysql.com&#x2F;get&#x2F;Downloads&#x2F;MySQLIns">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/image-20200406180019721.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/15a77e161e4ba46d8b40102daf045ed5663a30d5_2_525x500.png">
+<meta property="og:image" content="https://springboot.io/uploads/default/original/1X/fb10deba9875b6935eafa0ed082d75dc2010fbed.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/04de57f27ac99614ce2ccd6549259ec2e8d230de_2_525x500.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/1da7611237c8294f9f434dbdc4c2f480d5cd9d69.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/40fb0f220f6892882045facddbf69bb24a7eb9b3.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/793c724bd0a12706bd15cb87be54df6112dada2a_2_690x350.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/8edb91bb16d72c179e6919821a74efdfb2d6cdd8_2_690x340.png">
+<meta property="og:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/11b612c81547f292ef8c464039f6c9e94f84d66f.png">
+<meta property="article:published_time" content="2020-04-06T09:51:57.615Z">
+<meta property="article:modified_time" content="2020-04-08T12:03:28.440Z">
+<meta property="article:author" content="Xiuli Lin">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/img/image-20200406180019721.png">
+
+<link rel="canonical" href="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>mysql和Navicat Premium 15 | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Hexo</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+  </ul>
+
+</nav>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="en">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/04/06/mysql%E5%92%8CNavicat%20Premium%2015/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Xiuli Lin">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          mysql和Navicat Premium 15
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2020-04-06 17:51:57" itemprop="dateCreated datePublished" datetime="2020-04-06T17:51:57+08:00">2020-04-06</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-04-08 20:03:28" itemprop="dateModified" datetime="2020-04-08T20:03:28+08:00">2020-04-08</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="mysq-l-和-Naviat-Premium-15"><a href="#mysq-l-和-Naviat-Premium-15" class="headerlink" title="** mysq l 和 Naviat Premium 15**"></a>** mysq l 和 Naviat Premium 15**</h2><p>我记得，我之前安装过一次，但是忘记，现在顺便记一下把，顺便把Navicat Premium 15这个的破解也一起记录了把。</p>
+<p>首先就是安装我们的MySQL数据库，其实到官网还是很快就下载到了，因为，这个数据库是免费的哟。</p>
+<p>附上官网的地址吧：</p>
+<p>下载链接：<a href="http://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-5.7.12.0.msi" target="_blank" rel="noopener"> http://dev.mysql.com/get/Downloads/MySQLInstaller/mysql-installer-community-5.7.12.0.msi</a></p>
+<p> 下载完成之后，直接点击运行即可。然后按照流程一步一步的操作即可。</p>
+<p>详细的图解就按照这个博客继续把。</p>
+<p>现在来安装我们的：Navicat Premium 15（个人觉得这个软件超级的nice，非常的方便啦）</p>
+<p>首先就是我们来下载：Navicat Premium 15  这个软件啦，可以在官网下载，也可以在网友分享的平台下载，因为是国外的网站，比较慢，我又很懒，所以一般都是在网友们分享的网页去下载啦，，但是这样其实还是不太安全，建议官网下载把。</p>
+<p>官方网站：<a href="https://www.navicat.com/en/download/navicat-premium" target="_blank" rel="noopener">https://www.navicat.com/en/download/navicat-premium</a></p>
+<p><img src="img/image-20200406180019721.png" alt="image-20200406180019721"></p>
+<p>选择自己想要的版本就可以下载啦。。。。。。</p>
+<p>然后安装，一步一步的，非常的简单，就是下一步下一步。</p>
+<h2 id="接下来，来激活这个：Navicat-Premium-15-东东（Navicat-Premium-15-ZCJ）"><a href="#接下来，来激活这个：Navicat-Premium-15-东东（Navicat-Premium-15-ZCJ）" class="headerlink" title="接下来，来激活这个：Navicat Premium 15 东东（Navicat Premium 15 ZCJ）"></a>接下来，来激活这个：Navicat Premium 15 东东（Navicat Premium 15 ZCJ）</h2><h2 id="下载完成之后，直接放在-Navicat-Premium-15-的安装目录下就可以了，接下就可以开始，破解了，记得，破解之前，把电脑上的杀毒软件，乱七八糟的东西关闭之后才开始进行下面的操作把。。。。。。。。记得把我们安装好的Navicat-Premium-15，不要打开不要打开，不要打开。"><a href="#下载完成之后，直接放在-Navicat-Premium-15-的安装目录下就可以了，接下就可以开始，破解了，记得，破解之前，把电脑上的杀毒软件，乱七八糟的东西关闭之后才开始进行下面的操作把。。。。。。。。记得把我们安装好的Navicat-Premium-15，不要打开不要打开，不要打开。" class="headerlink" title="下载完成之后，直接放在 Navicat Premium 15 的安装目录下就可以了，接下就可以开始，破解了，记得，破解之前，把电脑上的杀毒软件，乱七八糟的东西关闭之后才开始进行下面的操作把。。。。。。。。记得把我们安装好的Navicat Premium 15，不要打开不要打开，不要打开。"></a>下载完成之后，直接放在 Navicat Premium 15 的安装目录下就可以了，接下就可以开始，破解了，记得，破解之前，把电脑上的杀毒软件，乱七八糟的东西关闭之后才开始进行下面的操作把。。。。。。。。记得把我们安装好的Navicat Premium 15，不要打开不要打开，不要打开。</h2><hr>
+<h2 id="以管理员身份启动注册机"><a href="#以管理员身份启动注册机" class="headerlink" title="以管理员身份启动注册机"></a>以管理员身份启动注册机</h2><p>打开注册机后，在 <strong>1) Patch</strong> 处，勾选Backup、Host和Navicat v15，然后点击Patch按钮</p>
+<p><img src="img/15a77e161e4ba46d8b40102daf045ed5663a30d5_2_525x500.png" alt="image"></p>
+<p>出现这个图标表示，第一步正确了，就开始下一步骤。</p>
+<p><img src="https://springboot.io/uploads/default/original/1X/fb10deba9875b6935eafa0ed082d75dc2010fbed.png" alt="image"></p>
+<h3 id="配置注册机"><a href="#配置注册机" class="headerlink" title="配置注册机"></a>配置注册机</h3><p><a href="https://springboot.io/uploads/default/original/1X/04de57f27ac99614ce2ccd6549259ec2e8d230de.png" target="_blank" rel="noopener"><img src="img/04de57f27ac99614ce2ccd6549259ec2e8d230de_2_525x500.png" alt="image">image725×690 118 KB</a></p>
+<p><strong>2) License, Product and Language</strong> 配置项<br>License为Enterprise<br>Products为Premium<br>Languages为Simplified Chinese（即简体中文，其它语言版本如英文版请选择English）</p>
+<p><strong>3) Resale License</strong> 配置项<br>Resale Version为Site license；</p>
+<p>然后点击 <strong>Generate</strong> 生成Serial Keygen（即注册码）</p>
+<h2 id="启动Navicat"><a href="#启动Navicat" class="headerlink" title="启动Navicat"></a>启动Navicat</h2><p>点击菜单栏的 <strong>帮助</strong> ，选择 <strong>注册</strong> ，在注册窗口 <strong>键</strong> 处填入上一步生成的Serial Keygen（即注册码），然后点击 <strong>激活</strong></p>
+<p><a href="https://springboot.io/uploads/default/original/1X/1da7611237c8294f9f434dbdc4c2f480d5cd9d69.png" target="_blank" rel="noopener"><img src="img/1da7611237c8294f9f434dbdc4c2f480d5cd9d69.png" alt="image">image937×525 12.8 KB</a></p>
+<p>选择 <strong>手动激活</strong></p>
+<p><a href="https://springboot.io/uploads/default/original/1X/40fb0f220f6892882045facddbf69bb24a7eb9b3.png" target="_blank" rel="noopener"><img src="img/40fb0f220f6892882045facddbf69bb24a7eb9b3.png" alt="image">image770×193 9.71 KB</a></p>
+<p>把请求码复制到注册机的Request Code框中，点击Activation Code下Generate按钮，生成激活码。</p>
+<p><a href="https://springboot.io/uploads/default/original/1X/793c724bd0a12706bd15cb87be54df6112dada2a.png" target="_blank" rel="noopener"><img src="img/793c724bd0a12706bd15cb87be54df6112dada2a_2_690x350.png" alt="image">image1476×749 195 KB</a></p>
+<blockquote>
+<p>若此处出现错误，要么你未完全按照教程来，要么你所安装的版本高于注册机所支持的版本</p>
+</blockquote>
+<p>把注册机生成的激活码复制到Navicate的激活码输入框中，点击激活</p>
+<p><a href="https://springboot.io/uploads/default/original/1X/8edb91bb16d72c179e6919821a74efdfb2d6cdd8.png" target="_blank" rel="noopener"><img src="img/8edb91bb16d72c179e6919821a74efdfb2d6cdd8_2_690x340.png" alt="image">image1473×726 279 KB</a></p>
+<p>提示OK<br><img src="img/11b612c81547f292ef8c464039f6c9e94f84d66f.png" alt="image"></p>
+<h2 id="激活成功"><a href="#激活成功" class="headerlink" title="激活成功"></a>激活成功</h2>
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/04/06/%E5%8E%BB%E6%A8%A1%E7%B3%8A%E8%AE%BA%E6%96%87/" rel="prev" title="去模糊论文">
+      <i class="fa fa-chevron-left"></i> 去模糊论文
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/04/07/%E4%B8%BA%E9%BB%91%E7%AE%B1%E8%AE%BE%E8%AE%A1%E4%BC%98%E5%8C%96%E9%97%AE%E9%A2%98%E9%80%89%E6%8B%A9%E8%BF%9B%E5%8C%96%E7%AE%97%E6%B3%95/" rel="next" title="为黑箱设计优化问题选择进化算法">
+      为黑箱设计优化问题选择进化算法 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#mysq-l-和-Naviat-Premium-15"><span class="nav-number">1.</span> <span class="nav-text">** mysq l 和 Naviat Premium 15**</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#接下来，来激活这个：Navicat-Premium-15-东东（Navicat-Premium-15-ZCJ）"><span class="nav-number">2.</span> <span class="nav-text">接下来，来激活这个：Navicat Premium 15 东东（Navicat Premium 15 ZCJ）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载完成之后，直接放在-Navicat-Premium-15-的安装目录下就可以了，接下就可以开始，破解了，记得，破解之前，把电脑上的杀毒软件，乱七八糟的东西关闭之后才开始进行下面的操作把。。。。。。。。记得把我们安装好的Navicat-Premium-15，不要打开不要打开，不要打开。"><span class="nav-number">3.</span> <span class="nav-text">下载完成之后，直接放在 Navicat Premium 15 的安装目录下就可以了，接下就可以开始，破解了，记得，破解之前，把电脑上的杀毒软件，乱七八糟的东西关闭之后才开始进行下面的操作把。。。。。。。。记得把我们安装好的Navicat Premium 15，不要打开不要打开，不要打开。</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#以管理员身份启动注册机"><span class="nav-number">4.</span> <span class="nav-text">以管理员身份启动注册机</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#配置注册机"><span class="nav-number">4.1.</span> <span class="nav-text">配置注册机</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#启动Navicat"><span class="nav-number">5.</span> <span class="nav-text">启动Navicat</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#激活成功"><span class="nav-number">6.</span> <span class="nav-text">激活成功</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Xiuli Lin</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Xiuli Lin</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> v4.2.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">Theme – <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v7.7.2
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
